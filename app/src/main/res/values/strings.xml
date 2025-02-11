@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Food Allergen</string>
+    <string name="ingredients">INGREDIENTS: Pork, water, wheat flour (wheat flour, calcium carbonate, iron, niacin, thiamin), onion, rapeseed oil, parsley, sage, thyme, salt, yeast extract, black pepper, onion powder.</string>
 </resources>

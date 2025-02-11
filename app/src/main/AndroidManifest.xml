@@ -13,6 +13,9 @@
         android:theme="@style/Theme.FoodAllergen"
         tools:targetApi="31">
         <activity
+            android:name=".OCR_Scanner_Allergen_detection"
+            android:exported="false" />
+        <activity
             android:name=".OCR_Scanner"
             android:exported="false" />
         <activity

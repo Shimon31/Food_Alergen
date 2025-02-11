@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".OCR_Scanner">
 
     <!-- TextView for the "Scan" title -->
@@ -34,15 +34,62 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Black background view under the horizontal line -->
     <View
         android:id="@+id/blackBg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/horizontalLine"/>
+        app:layout_constraintTop_toBottomOf="@id/horizontalLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
+    <!-- Flashlight icon on the left inside the black background -->
+    <ImageView
+        android:id="@+id/flashLightIV"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/flash_light"
+        app:layout_constraintStart_toStartOf="@id/blackBg"
+        app:layout_constraintTop_toTopOf="@id/blackBg" />
 
-        
-    
+    <!-- Speaker icon on the right inside the black background -->
+    <ImageView
+        android:id="@+id/speakerIV"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/speaker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/blackBg" />
+
+    <!-- White rectangle placed in the center within the black background -->
+    <ImageView
+        android:id="@+id/whiteRectangle"
+        android:layout_width="335dp"
+        android:layout_height="250dp"
+        android:src="@drawable/white_rectangle"
+        app:layout_constraintBottom_toBottomOf="@id/blackBg"
+        app:layout_constraintEnd_toEndOf="@id/blackBg"
+        app:layout_constraintStart_toStartOf="@id/blackBg"
+        app:layout_constraintTop_toTopOf="@id/blackBg" />
+
+    <!-- Text showing the instruction to point at the ingredients label -->
+    <TextView
+        android:id="@+id/pointLabelTV"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:text="Point at Ingredients Label"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/whiteRectangle"
+        app:layout_constraintEnd_toEndOf="@id/whiteRectangle"
+        app:layout_constraintStart_toStartOf="@id/whiteRectangle"
+        app:layout_constraintTop_toTopOf="@id/whiteRectangle" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
