@@ -13,6 +13,24 @@
         android:theme="@style/Theme.FoodAllergen"
         tools:targetApi="31">
         <activity
+            android:name=".ChangePassword"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".BarcodeScannerNoAllergenDetection"
+            android:exported="false" />
+        <activity
+            android:name=".BarcodeScannerAllergendetection"
+            android:exported="false" />
+        <activity
+            android:name=".BarcodeScanner"
+            android:exported="false" />
+        <activity
+            android:name=".OCRScannerNoAllergenDetection"
+            android:exported="false" />
+        <activity
             android:name=".OCR_Scanner_Allergen_detection"
             android:exported="false" />
         <activity
