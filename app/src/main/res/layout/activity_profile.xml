@@ -96,11 +96,10 @@
 
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/switchBtn"
-        android:layout_width="40dp"
+        android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
-        android:text="Switch Button"
         android:track="@drawable/custom_switch_track"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/generalSetting" />
